@@ -1,0 +1,549 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2020.12.13)  12 JUL 2021 22:49
+entering extended mode
+**./0000.tex
+(0000.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-07> xparse <2020-03-03> (bvm2020.cls
+Document Class: bvm2020 2019/10/04
+******************************************
+* Bildverarbeitung fuer die Medizin 2018 *
+* Informatik Aktuell LaTeX documentclass *
+* INF-AKT, V 1.0 - Springer, 2004 May 15 *
+* ammended by HG 2019-03-20 *
+* ammended by HG 2019-10-04 *
+******************************************
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count185
+\mult@box=\box47
+\multicol@leftmargin=\dimen139
+\c@unbalance=\count186
+\c@collectmore=\count187
+\doublecol@number=\count188
+\multicoltolerance=\count189
+\multicolpretolerance=\count190
+\full@width=\dimen140
+\page@free=\dimen141
+\premulticols=\dimen142
+\postmulticols=\dimen143
+\multicolsep=\skip49
+\multicolbaselineskip=\skip50
+\partial@page=\box48
+\last@line=\box49
+\maxbalancingoverflow=\dimen144
+\mult@rightbox=\box50
+\mult@grightbox=\box51
+\mult@gfirstbox=\box52
+\mult@firstbox=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\c@minrows=\count191
+\c@columnbadness=\count192
+\c@finalcolumnbadness=\count193
+\last@try=\dimen145
+\multicolovershoot=\dimen146
+\multicolundershoot=\dimen147
+\mult@nat@firstbox=\box91
+\colbreak@box=\box92
+\mc@col@check@num=\count194
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.st
+y
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip51
+\multirow@cntb=\count195
+\multirow@dima=\skip52
+\bigstrutjot=\dimen148
+) (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2020/10/27 3.51 The Babel package
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2020/10/27 3.51 Babel common definitions
+\babel@savecnt=\count196
+\U@D=\dimen149
+\l@babelnohyphens=\language2
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def
+)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count197
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\german.
+ldf
+Language: german 2021/02/27 v2.13 German support for babel (pre-1996 orthograph
+y)
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\germanb
+.ldf
+Language: germanb 2021/02/27 v2.13 German support for babel (pre-1996 orthograp
+hy)
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language `German (trad. orthography)' into the forma
+t.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 62.
+
+Package babel Info: Making " an active character on input line 139.
+))
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\englis
+h.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+)) (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/ae\ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+))
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 11
+2.
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+))
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box93
+) (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.st
+y
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip53
+For additional information on amsmath, use the `?' option.
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen150
+)) (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
+y
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen151
+) (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count198
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count199
+\leftroot@=\count266
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count267
+\DOTSCASE@=\count268
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box94
+\strutbox@=\box95
+\big@size=\dimen152
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count269
+\c@MaxMatrixCols=\count270
+\dotsspace@=\muskip16
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
+\tag@help=\toks18
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
+\andhelp@=\toks19
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
+\@envbody=\toks20
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.st
+y
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsxtra.sty
+Package: amsxtra 1999/11/15 v1.2c AMS extra commands
+LaTeX Info: Redefining \nobreakspace on input line 54.
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
+y
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.st
+y
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphic
+s.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.
+def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.
+sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip56
+\subfigcapskip=\skip57
+\subfigcaptopadj=\dimen161
+\subfigbottomskip=\skip58
+\subfigcapmargin=\dimen162
+\subfiglabelskip=\skip59
+\c@subfigure=\count276
+\c@lofdepth=\count277
+\c@subtable=\count278
+\c@lotdepth=\count279
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.
+cfg)
+\subfig@top=\skip60
+\subfig@bottom=\skip61
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm
+.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+ (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count280
+\float@exts=\toks23
+\float@box=\box96
+\@float@everytoks=\toks24
+\@floatcapt=\box97
+) (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks25
+\c@algorithm=\count281
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm
+ic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count282
+\c@ALC@line=\count283
+\c@ALC@rem=\count284
+\c@ALC@depth=\count285
+\ALC@tlm=\skip62
+\algorithmicindent=\skip63
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/sidecap\sidecap.sty
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+\SC@BOXWD=\dimen163
+\SC@CAPWD=\dimen164
+\SC@tempdima=\dimen165
+\SC@tempdimb=\dimen166
+\c@SC@C=\count286
+\SC@BOX=\box98
+) (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
+fg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+\c@chapter=\count287
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 561.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 562.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 563.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 564.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 565.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 566.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 567.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 568.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 569.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 570.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 571.
+\tocchpnum=\dimen167
+\tocsecnum=\dimen168
+\tocsectotal=\dimen169
+\tocsubsecnum=\dimen170
+\tocsubsectotal=\dimen171
+\tocsubsubsecnum=\dimen172
+\tocsubsubsectotal=\dimen173
+\tocparanum=\dimen174
+\tocparatotal=\dimen175
+\tocsubparanum=\dimen176
+\@tempcntc=\count288
+\fnindent=\dimen177
+\figbreite=\skip64
+\c@@inst=\count289
+\c@@auth=\count290
+\c@auco=\count291
+\instindent=\dimen178
+\authrun=\box99
+\authorrunning=\toks26
+\tocauthor=\toks27
+\titrun=\box100
+\titlerunning=\toks28
+\toctitle=\toks29
+\c@theorem=\count292
+\c@case=\count293
+\c@conjecture=\count294
+\c@corollary=\count295
+\c@definition=\count296
+\c@example=\count297
+\c@exercise=\count298
+\c@lemma=\count299
+\c@note=\count300
+\c@problem=\count301
+\c@property=\count302
+\c@proposition=\count303
+\c@question=\count304
+\c@solution=\count305
+\c@remark=\count306
+\headlineindent=\dimen179
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
+pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count307
+\l__pdf_internal_box=\box101
+) (0000.aux)
+\openout1 = `0000.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
+.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count308
+\scratchdimen=\dimen180
+\scratchbox=\box102
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen181
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks31
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
+f-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.st
+y
+Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
+ (C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/ms\everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip65
+\RaggedLeftLeftskip=\skip66
+\RaggedRightLeftskip=\skip67
+\CenteringRightskip=\skip68
+\RaggedLeftRightskip=\skip69
+\RaggedRightRightskip=\skip70
+\CenteringParfillskip=\skip71
+\RaggedLeftParfillskip=\skip72
+\RaggedRightParfillskip=\skip73
+\JustifyingParfillskip=\skip74
+\CenteringParindent=\skip75
+\RaggedLeftParindent=\skip76
+\RaggedRightParindent=\skip77
+\JustifyingParindent=\skip78
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
+
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
+
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 8
+2.
+
+(C:\Users\z00461wk\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+[1
+
+{C:/Users/z00461wk/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<u-net-architecture.png, id=10, 1560.83125pt x 1039.885pt>
+File: u-net-architecture.png Graphic file (type png)
+<use u-net-architecture.png>
+Package pdftex.def Info: u-net-architecture.png  used on input line 122.
+(pdftex.def)             Requested size: 173.54964pt x 173.55704pt.
+<maskroi.png, id=11, 462.528pt x 346.896pt>
+File: maskroi.png Graphic file (type png)
+<use maskroi.png>
+Package pdftex.def Info: maskroi.png  used on input line 134.
+(pdftex.def)             Requested size: 104.1381pt x 78.10115pt.
+<maskgold.png, id=13, 462.528pt x 346.896pt>
+File: maskgold.png Graphic file (type png)
+<use maskgold.png>
+Package pdftex.def Info: maskgold.png  used on input line 136.
+(pdftex.def)             Requested size: 104.1381pt x 78.10115pt.
+<maskgnew.png, id=14, 462.528pt x 346.896pt>
+File: maskgnew.png Graphic file (type png)
+<use maskgnew.png>
+Package pdftex.def Info: maskgnew.png  used on input line 138.
+(pdftex.def)             Requested size: 104.1381pt x 78.10115pt.
+
+[2 <./u-net-architecture.png>]
+<diagram.png, id=18, 752.69887pt x 480.66368pt>
+File: diagram.png Graphic file (type png)
+<use diagram.png>
+Package pdftex.def Info: diagram.png  used on input line 152.
+(pdftex.def)             Requested size: 277.69987pt x 177.3367pt.
+
+Overfull \hbox (41.77965pt too wide) has occurred while \output is active
+                                    [] []
+ []
+
+[3 <./maskroi.png> <./maskgold.png> <./maskgnew.png> <./diagram.png>]
+<train2.png, id=26, 1850.112pt x 965.5272pt>
+File: train2.png Graphic file (type png)
+<use train2.png>
+Package pdftex.def Info: train2.png  used on input line 184.
+(pdftex.def)             Requested size: 347.12354pt x 181.15376pt.
+ [4 <./train2.png>] (0000.bbl
+Overfull \hbox (41.77965pt too wide) has occurred while \output is active
+                                    [] []
+ []
+
+[5]) [6] (0000.aux) ) 
+Here is how much of TeX's memory you used:
+ 4815 strings out of 481619
+ 66329 string characters out of 2917391
+ 362395 words of memory out of 3000000
+ 21546 multiletter control sequences out of 15000+200000
+ 428291 words of font info for 79 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 80i,9n,85p,727b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/z00461wk/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmb10.pfb><C:/Users/z00461wk/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/z00461wk/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/z00461wk/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/z0046
+1wk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/U
+sers/z00461wk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
+9.pfb><C:/Users/z00461wk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmtt9.pfb>
+Output written on 0000.pdf (6 pages, 550531 bytes).
+PDF statistics:
+ 61 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,373 @@
+From the last section We found that with the same composition of data, the results obtained with the optimization algorithm were more stable than without t the algorithm (mode 7)
+When we utilized the larger datasets to evaluate the performance of each model. The performance gap between using the fully annotated and non-fully annotated datasets is reduced. Despite the fact that there is no very significant difference in the average values. However, the results of mode 8 are still more stable when it comes to the iou of specific organs. In other words , there is stll a significant difference between the IOUs of the left and right lungs due to the lack of annotation of the data, however experiment with the fully annotated dataset or experiment using the optimization algorithm have no such difference.
+
+As shown above, this is a scan of the patient's lower abdomen, but model7 has incorrectly predicted that several pixels here belong to the lungs. Those numerous outliers that explain why model 7 has a large gap in iou for different organs . As a comparison, such outliers rarely occur in mode 8 and in mode 1 2 trained on the fully labeled dataset
+
+
+
+Das vorliegende Richtliniendokument entspricht exakt den Formatvorgaben.
+Ihr Beitrag sollte also optisch genauso aussehen. Die Zeichen- und Absatzformatierungen 
+sind in \LaTeX -Druckformaten gespeichert und d\"urfen nicht modifiziert werden. 
+\textcolor{red}{
+Damit die Beitr\"age eine \"ahnliche optische Grundstruktur haben halten Sie bitte die maximalen Zeichenl\"angen f\"ur Ihren 
+\begin{enumerate}
+\item Titel, 2 Zeilen ca. 80 Zeichen
+\item Untertitel, 2 Zeilen ca. 90 Zeichen
+\item Titlerunning, 1 Zeile max. 40 Zeichen
+\item Abstract, 20 Zeilen ca. 1500 Zeichen
+\end{enumerate}
+ein. 
+Bitte verwenden Sie die Regeln der neuen Rechtschreibung, falls Ihr Beitrag in deutscher 
+Sprache verfasst ist. }
+
+\subsection{Satzspiegel und Paginierung}
+%
+Bitte erstellen Sie Ihre Beitr\"age im DIN-A4 Format. Alle Seitenr\"ander sollten nicht 
+kleiner als 4\ts cm sein. Der Satzspiegel (beschreibbares Feld in H\"ohe $\times$ Breite) 
+betr\"agt 19,3\ts cm $\times$ 12,2\ts cm. Die H\"ohe des Textes darf diesen Rahmen 
+keinesfalls \"uberschreiten. Damit nicht eine neue \"Uberschrift allein unten auf der Seite steht, darf die Seite auch etwas oberhalb des unteren Randes enden. 
+
+
+%
+Durch die \LaTeX -Klasse werden automatisch aus den Angaben in {\tt\string\title} und {\tt\string\author} die Fu\ss{}- und Kopfzeile erstellt. Sollten Sie den Text \glqq Title Suppressed Due to Excessive Length\grqq\ anstatt Ihres Titels in der Kopfzeilen erhalten, definieren Sie mit dem Befehl {\tt\string\runningtitle} im Kopfteil Ihres Dokumentes einen verk\"urzten Titel f\"ur die Kopfzeile und kontrollieren bitte, ob dieser nun in die Kopfzeile passt. Die endg\"ultigen Seitenzahlen im Tagungsband werden von den Editoren eingef\"ugt.
+
+\subsection{Abs\"atze und Schriftarten}
+%
+Die Abst\"ande f\"ur Kapitel- und Unterkapitel-\"Uberschriften werden von \LaTeX\ vorgegeben. Bitte verwenden Sie keine eigenen Formatierungen. Vermeiden Sie sog.\ leere Kapitel, bei denen zwei Gliederungs\"uberschriften direkt 
+aufeinander folgen.
+
+Der erste Absatz in einem (Unter-)Kapitel wird nicht einger\"uckt. Neue Abs\"atze in einem Abschnitt werden am Anfang um 5\ts mm einger\"uckt. Bitte f\"ugen Sie keine Leerzeilen zwischen einzelnen Abs\"atzen ein. Der \LaTeX -Befehl \glqq \bs \bs \grqq\ darf beispielsweise nicht verwendet werden.
+
+
+
+%
+Bitte verwenden Sie ausschlie\ss{}lich die standardm\"a\ss{}ig eingestellten Schriftarten (Fonts) \glqq Times\grqq\ bzw.\ \glqq Times (New) Roman\grqq . Die jeweiligen Schriftgr\"o\ss{}en k\"onnen Tab.~\ref{0000-tab-schriften} 
+entnommen werden. Die \LaTeX -Druckformate enthalten bereits diese Schrifteinstellungen. 
+Hervorhebungen k\"onnen Sie {\em kursiv} setzen, jedoch sind diese Hervorhebungen sehr sparsam zu verwenden. Einheiten (m, mm, etc.) d\"urfen nicht kursiv gesetzt werden. Der {\bf Fettdruck} ist nur zu verwenden, wenn er von dieser Formatvorlage gefordert wird.
+Bitte verzichten Sie aus Gr\"unden der Lesbarkeit auf 
+Fu\ss{}noten\footnote{Sollten dennoch Fu\ss{}noten unvermeidbar sein, so sind diese durch eine 
+2\ts cm lange Linie vom Textk\"orper abzusetzen. F\"ur den Fu\ss{}notentext muss die ganze 
+Seitenbreite verwendet werden, die maximale Seitenh\"ohe darf in keinem Fall \"uberschritten 
+werden.} und sonstige Textanmerkungen (diese k\"onnen in Klammern direkt in den 
+Text eingef\"ugt werden). 
+
+%
+\begin{table}[t]
+\caption{Schriftgr\"o\ss{}en der einzelnen Textbausteine. Die Abk\"urzungen
+         {\em zen}, {\em bls} und {\em lkb} stehen f\"ur {\em zentriert},
+         {\em blocksatz} und {\em linksb\"undig}.}
+\label{0000-tab-schriften}
+\begin{tabular*}{\textwidth}{l@{\extracolsep\fill}lllll}
+\hline
+Text                  & Punkte & Schrift & Format & \LaTeX-Umgebung       & Word Druckformat\\ \hline
+Titel                 & 14     & fett    & zen    & \bs title\{\}         & Titel  \\
+Untertitel            & 12     & fett    & zen    & \bs subtitle\{\}      & Untertitel  \\
+Autoren               & 10     & normal  & zen    & \bs author\{\}        & Autoren \\
+Adressen              & 9      & normal  & zen    & \bs institute\{\}     & Adressen \\
+Email                 & 9      & normal  & zen    & \bs institute\{\}     & Email \\
+Abstract              & 9      & normal  & bls    & abstract              & Abstract \\
+1 \"Uberschriften       & 12     & fett    & lkb    & \bs section\{\}       & \\"Uberschrift1 \\
+1.1 \"Uberschriften     & 10     & fett    & lkb    & \bs subsection\{\}    & \"Uberschrift2 \\
+Normaler Text         & 10     & normal  & bls    & ---                   & Text \\
+                      &        &         &        &                       & Folgetext \\
+Gleichungen           & 10     & kursiv  & zen    & equation              & Formel \\ 
+Bildunterschriften    & 9      & normal  & bls    & figure \bs caption\{\}& Bild \\
+Tabellenlegenden      & 9      & normal  & bls    & table \bs caption\{\} & Tabelle \\
+Literaturangaben      & 9      & normal  & bls    & thebibliography       & Literatur \\
+Fu\ss{}noten              & 9      & normal  & bls    & \bs footnote\{\}      & Fu\ss{}notentext \\ \hline
+\end{tabular*}
+\end{table}
+
+
+
+\subsection{Gliederung des Beitrages}
+
+
+Jeder BVM-Proceedingsbeitrag muss in seiner Grundstruktur wie folgt gegliedert sein: 
+ 
+\begin{enumerate}
+\item[] Kurzfassung (Abstract), 
+\item Einleitung (Introduction), 
+\item Material und Methoden (Materials and methods), 
+\item Ergebnisse (Results), 
+\item Diskussion (Discussion), 
+\item \textcolor{red}{ggf. Danksagung (Acknowledgement)},
+\item[] Literaturverzeichnis (References).
+\end{enumerate} 
+%
+Der Absatz mit der Zusammenfassung beginnt mit dem Wort \glqq {\bf Kurzfassung.}\grqq\ in Fettdruck mit abschlie\ss{}endem Punkt, bei Beitr\"agen in Englisch entsprechend \glqq {\bf Abstract.}\grqq . Kurzfassung und Literaturverzeichnis erhalten keine Nummer. 
+
+Die Abschnitte Einleitung bis Diskussion werden nummeriert und sollten -- wenn erforderlich -- in Unterabschnitte unterteilt werden. Hierbei muss die in \LaTeX\ vorgegebene Reihenfolge
+
+\begin{enumerate}
+\item {\tt \bs section},
+\item {\tt \bs subsection},
+\item {\tt \bs subsubsection}, und dann erst
+\item {\tt \bs paragraph}. 
+\end{enumerate} 
+%
+unbedingt eingehalten werden. Die Verwendung der Befehle {\tt \bs subsubsection} oder {\tt \bs paragraph} direkt nach einem {\tt \bs section} ist nicht gestattet -- auch wenn dies Platz spart. Dies wird bei der redaktionellen Bearbeitung r\"uckg\"angig gemacht und Ihr Text muss gek\"urzt werden.
+\textcolor{red}{Falls Sie einen englischsprachigen Beitrag verfassen, beachten Sie, dass nur der erste Buchstabe, Eigennamen und Abk\"urzungen Ihrer \"Uberschriften f\"ur die Gliederungspunkte, zu kapitalisieren sind. Der restliche Teil Ihrer \"Uberschrift soll nicht in einer kapitalisierten Form vorliegen.}
+
+Bitte verwenden Sie ausschlie\ss{}lich dezimale Einteilungen f\"ur die Nummerierung der 
+beschrifteten Abbildungen, Tabellen, Gleichungen, Literaturverweise und sonstiger Elemente, wie z.B.\ auch bei den beteiligten Instituten auf der Titelseite des Beitrages (Abschn.\ \ref{0000-kap-inst}).
+
+\textcolor{red}{Sie k\"onnen bei Bedarf eine Danksagung verfassen. Tun Sie dies nur mit dem Befehl {\tt \bs ack } und sehen Sie von der Verwendung von {\tt \bs section\{Acknowledgement\}} ab.}
+
+
+\subsection{Autoren- und Institutsnennung}
+\label{0000-kap-inst}
+%
+Es gibt viele M\"oglichkeiten, die beteiligten Autoren und Institute zu benennen. Um eine einheitliche Nennung in allen Beitr\"agen und den korrekten Aufbau des Autorenverzeichnisses zu gew\"ahrleisten, verwenden Sie bitte keine Zusatzpakete wie {\tt inst} o.\"A.. Stattdessen gehen Sie bitte wie folgt vor:
+%
+\begin{itemize}
+\item Nennen Sie jeden Autor im Format \glqq Vorname\symbol{126}Initialen\symbol{126}Nachname\grqq .
+\item Trennen Sie die Autoren lediglich durch Kommata.
+\item Die Zuordnung zu den Instituten erfolgt durch hochgestellte Zahlen, die im    
+      Mathematik-Modus direkt nach dem Autoren-Nachnamen gesetzt werden 
+      (Beispiel: {\tt Thomas\symbol{126}M.\symbol{126}Deserno\$\symbol{94}1\$, \dots }).
+\item Die Tilde verhindert das Auftrennen des Namens in zwei Zeilen, 
+      falls f\"ur die Autoren mehrere Zeilen ben\"otigt werden.
+\item Nennen Sie die Institute so kurz, dass Sie (nach M\"oglichkeit) 
+      jeweils nur eine Zeile in Anspruch nehmen.
+\item Nennen Sie nur die Email-Adresse des korrespondierenden Autors.
+\item \textcolor{red}{Beim {\tt\bs authorrunning} nur den Nachnamen angeben. Die Nachnamen sind durch Kommata zu trennen und der letzte Autor ist mit {\tt\&} anzuh\"angen.
+	  Bei mehr als drei Autoren nennen Sie nur den Erstautor und h\"angen et al. an.}
+\end{itemize}
+
+Als (Co-)Autor mehrerer Beitr\"age stellen Sie bitte sicher, dass Sie in jedem Beitrag mit Vor-, Mittel- und Nachname in gleicher Weise genannt werden, da Sie sonst mehrfach im Autorenverzeichnis auftauchen werden.
+
+
+
+\subsection{Tabellen und Abbildungen}
+%
+Jede Abbildung oder Tabelle muss nummeriert sein und eine Unter- bzw.\ \"Uberschrift erhalten. Abbildungen hei\ss{}en \glqq {\bf Abb.\ 1.}\grqq , \glqq {\bf Abb.\ 2.}\grqq , etc., und Tabellen hei\ss{}en \glqq {\bf Tabelle~1.}\grqq , \glqq {\bf Tabelle~2.}\grqq , etc. Diese Namen werden fett gesetzt. Danach folgt die eigentliche Beschriftung. Im Text muss auf Abbildungen und Tabellen explizit verwiesen werden, z.B.\ am Ende des Satzes (Tab.~\ref{0000-tab-schriften}). Auch die Aussage, die mit dem Objekt visualisiert werden soll, muss im Text explizit genannt werden. S\"atze wie: \glqq Abb.~\ref{0000-fig-01} zeigt das Ergebnis.\grqq\ alleine sind nicht ausreichend.
+
+Tabellen werden ohne Gitterlinien gesetzt. Die Tabelle enth\"alt lediglich eine Kopf- und eine Fu\ss{}linie und eine Linie zwischen der Kopfzeile und dem Tabellenrumpf (Tab.~\ref{0000-tab-schriften}). Breite Tabellen sollten auf die gesamte Textbreite aufgezogen werden.  Die entsprechende Befehlssequenz ist aus dem \LaTeX -Quelltext dieses Dokumentes ersichtlich und lautet:
+%
+\begin{verbatim}
+\begin{tabular*}{\textwidth}{l@{\extracolsep\fill}llll}
+...
+\end{tabular*}
+\end{verbatim}
+
+\textcolor{red}{Kleinere Objekte (bis max. 0,7cm) k\"onnen beliebig platziert werden (Abb.~\ref{0000-fig-01})}. Verwenden Sie daf\"ur die Umbebungen {\tt \bs SCfigure} und {\tt \bs SCtable} aus dem {\em sidecap}-Paket. Der Text wird hierbei neben den Objekten oben b\"undig ausgerichtet.
+%
+\begin{SCfigure}[5][htb]
+\label{0000-fig-01}
+\setlength{\figbreite}{0.3\linewidth}
+\caption{Beispiel f\"ur ein kleines Bild, bei dem die Bildunterschrift neben der Abbildung platziert wird.}
+\includegraphics[width=\figbreite,height=\figbreite]{0000-fig4}
+\end{SCfigure}
+
+Gr\"o\ss{}ere Tabellen oder Abbildungen sollten nur oben (bevorzugte Position f\"ur Tabellen) oder unten (bevorzugte Position f\"ur Bilder) auf die Seite gesetzt werden. Hierdurch wird f\"ur die Proceedings ein einheitliches Erscheinungsbild erreicht, was auch die Lesbarkeit der einzelnen Beitr\"age erh\"oht. Bitte beachten Sie, dass bei Bildern und Tabellen oben auf der Seite die Beschriftung \"uber dem Objekt erfolgt. Werden die Objekte hingegen unten auf der Seite platziert, wird die Beschriftung darunter gesetzt. In Ihrem \LaTeX -Quellcode muss dazu der {\tt \bs caption}-Befehl an der richtigen Stelle stehen. Caption Eintr\"age sollten mit einem Punkt enden -- der Quelltext dieses Dokumentes kann als Vorlage dienen.
+In \LaTeX\ k\"onnen Abbildungen direkt im EPS-Format elektronisch in das Dokument 
+integriert werden. Verwenden Sie hierf\"ur den \LaTeX-Befehl \string\includegraphics\ aus dem \LaTeX-Paket {\em graphic}. Sollten Sie mehrere Bilder unter einer \"Uberschrift zusammenfassen wollen, so erm\"oglicht 
+dies das Paket {\em subfigure} (Abb.~\ref{0000-fig-02}), welches durch die bvm2020-Dokumentenklasse bereits eingebunden wird.
+\textcolor{red}{Anstatt der {\tt\bs center} Umgebung, verwenden Sie bitte ausschlie\ss lich {\tt\bs centering}.}
+
+%
+\subsection{Formeln}
+%
+Einfachere Formeln, wie $x+y=z$, k\"onnen fortlaufend im Text erscheinen, l\"angere oder wichtige mathematische Formeln werden innerhalb der Seite zentriert ausgerichtet
+%
+\begin{equation}
+x_i + y_{\rm in} = \sin (z_{\rm out}) = 2\ts \rm cm
+\label{0000-eq1}
+\end{equation}
+%
+und am rechten Rand auf der H\"ohe des Gleichheitszeichens fortlaufend nummeriert.
+Mathematische Formelzeichen und Symbole werden {\em kursiv} gesetzt, Funktionsnamen und andere Namensbezeichner jedoch nicht. Einheiten werden mit dem \LaTeX -Makro {\tt \bs ts} an den Zahlenwert im richtigen Abstand gebunden. \textcolor{red}{Die Verwendung von jeglichen Satzzeichen vor oder nach mathematischen Formeln ist untersagt. Der Quellcode von Gleichung (\ref{0000-eq1}) gibt hier Beispiele, wie dies mit \LaTeX\ umgesetzt werden kann. }
+
+
+
+
+\subsection{Literaturangaben und interne Verweise}
+
+
+Wie schon erw\"ahnt werden alle \LaTeX -Sourcen zu einem Proceedings-Dokument vereint. 
+Damit bei Querbez\"ugen im Dokument keine Kollisionen entstehen, m\"ussen alle internen Verweise (label, refs, etc.) mit der BVM-Beitragsnummer versehen werden. Dies gilt auch f\"ur die Dateinamen von Abbildungen.
+
+Bitte ordnen Sie die Literaturverweise in der Reihenfolge, in der sie im Text auftreten. 
+Im Text selbst werden die Literaturverweise in eckigen Klammern gesetzt \cite{0000-01,0000-02,0000-03}. Alle Eintr\"age im Literaturverzeichnis m\"ussen im Text referenziert werden. 
+
+Die Eintr\"age im Literaturverzeichnis m\"ussen in den Vancouver-Style \cite{0000-05} gesetzt werden. Eine kurze Beschreibung dieser internationalen Konvention finden Sie in der Datei {\tt bvm2020-vancouver.pdf}.
+Aufgrund der begrenzten Beitragsl\"ange sollten Sie die folgenden Hinweise bei der Erstellung des Literaturverzeichnisses beachten:
+%
+\begin{itemize}
+\item Beschr\"anken Sie sich auf die wichtigsten Arbeiten, die zum
+      Verst\"andnis Ihres Beitrags notwendig sind.
+\item K\"urzen Sie Zeitschriftennamen entsprechend der MEDLINE-Kodierung ab. Eine MS-Excel-Datei ({\tt bvm2019-issn.xls}) und eine ASCII-Datei ({\tt bvm2019- issn.txt}) mit allen Abk\"urzungen sind Teil dieses Autorenpaketes.
+\item Nennen Sie bei B\"uchern nur den Haupttitel.
+\item Nennen Sie nur den Namen des Verlages ohne das Wort \glqq Verlag\grqq\ selbst.
+\item Referenzieren Sie auf Beitr\"age fr\"uherer BVM-Workshops als Proceedingsbeitr\"age im Journal \cite{0000-04}.
+\item K\"urzen Sie lange Autorenlisten mit \glqq et al.\grqq\ ab. Bei Beitr\"agen reichen die ersten drei Autoren, bei Herausgebern reicht die Nennung des Ersten.
+\textcolor{red}{\item Bei Verweisen verzichten Sie auf Zusatzw\"orter und k\"urzen Fig. bzw. Abb. ab. 
+\item Die Titel im Literaturverzeichnis sind bei @ARTICLE und @MISC nicht zu kapitalisieren.
+\item Der Titel im Literaturverzeichnis bei @BOOK hingegen ist zu kapitalisieren.}
+\end{itemize}
+
+\begin{figure}[b]
+	\setlength{\figbreite}{0.3\textwidth}
+	\centering
+	\subfigure[Eins]{\includegraphics[width=\figbreite]{0000-fig1}}
+	\subfigure[Zwei]{\includegraphics[width=\figbreite]{0000-fig2}}
+	\subfigure[Drei]{\includegraphics[width=\figbreite]{0000-fig3}}
+	\caption{Beispiel f\"ur die Einbindung mehrerer Graphiken unter einer \"Uberschrift.}
+	\label{0000-fig-02}
+\end{figure}
+
+\subsection{Umfang der Beitr\"age}
+%
+Alle Beitr\"age auf dem Workshop, egal ob als Vortrag, Poster oder Systemdemonstration 
+pr\"asentiert, d\"urfen, basierend auf dem hier vorgegebenen Layout, maximal 6 (in Worten: 
+sechs) Seiten umfassen. Bitte \"andern Sie nicht die Formatierung des Beitrags, sondern k\"urzen 
+Sie Ihren Text oder verkleinern Sie Abbildungen, um dieses Limit einzuhalten. Zusatzseiten sind kostenpflichtig (270,00\ts \euro\ inkl.\ MwSt.\ pro Seite) und werden den Autoren in Rechnung gestellt. 
+
+Bitte beachten Sie, dass diese Geb\"uhren am Anfang des Jahres umgehend nach Rechnungsstellung bezahlt werden m\"ussen, damit Ihr Beitrag in die Proceedings aufgenommen werden kann. Ma\ss{}geblich ist hier die Beitragsl\"ange nach editorieller \"Uberarbeitung, nicht die der Einreichung. Wenn Sie also K\"urzungen im Text oder Verkleinerungen Ihrer Abbildungen vermeiden m\"ochten, versuchen Sie bitte nicht, durch \glqq tricksen \grqq\ die Style-Vorgaben zu umgehen, sondern verfassen den Text -- wie alle anderen Autoren auch -- gem\"a\ss{} den Vorgaben.
+
+Falls Sie Ihren Beitrag in MS-Word erstellen, sollten Sie ca.\ $\frac{1}{2}$ Seite freilassen, damit auch nach der Konvertierung das Seitenlimit nicht \"uberschritten wird. 
+
+\section{Einreichung der Kurzfassungen zur Begutachtung}
+%
+Zur Begutachtung der Beitr\"age m\"ussen diese anonymisiert (falls Sie die Musterdatei {\tt 0000.tex} auch schon zur Beitragseinreichung verwenden, dann kommentieren Sie einfach die Befehle {\tt \bs author\{\}} und {\tt \bs institute\{\}} aus) und in das PDF-Format konvertiert werden. Sie k\"onnen Ihre {\tt *.pdf}-Datei per Upload \"uber
+%
+\begin{center} 
+{\tt http:/$\!$/www.bvm-workshop.org/} 
+\end{center}
+%
+unter Autoren / Einreichung einreichen. Bitte beachten Sie die f\"ur die Einreichung geforderte Dokumentenstruktur, die etwas von dem Proceedingsformat abweicht.
+
+
+
+\section{Erstellung und \"Ubermittlung angenommener Beitr\"age f\"ur die Proceedings}
+%
+Alle Beitr\"age erhalten eine vierstellige Referenznummer. Diese ist f\"ur die Namensgebung bei internen Verweisen und bei externen Bilddateien gem\"a\ss{} den Vorgaben zu verwenden. Dieses Musterdokument hat die fiktive Beitragsnummer \glqq 0000\grqq .
+
+\subsection{\LaTeX-Format} 
+%
+Verwenden Sie f\"ur die Erstellung Ihres Beitrags im \LaTeX-Format die Dokumentklasse {\tt bvm2020.cls}, die ein Filedatum vom Dezember 2019 haben muss. Sie k\"onnen mit der vorliegenden Richtlinie {\tt 0000.tex} als Musterdokument beginnen und auf Ihre Inhalte anpassen. Bitte beachten Sie die folgenden Hinweise:
+%
+\begin{itemize}
+\item \emph{Deutsch oder Englisch:} Verwenden Sie grunds\"atzlich die zweisprachige Dokumentklasse {\tt \bs documentclass[german,english]\{bvm2020\}} und w\"ahlen Sie nach der Zeile {\tt \bs begin\{document\}} die Sprache Ihres Beitrags mit der Anweisung {\tt \bs selectlanguage\{german\}} bzw.\ {\tt \bs selectlanguage\{english\}} aus. Je nach Wahl m\"ussen Sie darauf achten, die richtigen Anf\"uhrungszeichen zu verwenden. Die Deutschen sind mit {\tt\bs glqq} ... {\tt\bs grqq} und die Englischen mit {\tt\bs elqq} ... {\tt\bs erqq} zu setzen. Im Englischen sind die Title und die Runningtitle bis auf Bindew\"orter gro\ss{} zu schreiben. Die Kapitel des einzelnen Beitrags jedoch sind bis auf den ersten Buchstaben, Eigennamen und Abk\"urzungen klein zu schreiben.
+%
+\item \emph{Packages:} Folgende Packages k\"onnen bedenkenlos eingesetzt werden und sind bereits in der Dokumentenklasse {\tt bvm2020.cls} eingebunden: \emph{amsmath, amsfonts, amssymb, amsxtra, eurosym, graphics, graphicx, multicol, multirow, algorithmic}, \emph{sidecap} und \emph{subfigure}. Binden Sie keine \LaTeX-Packages ({\tt *.sty}) ein. 
+%
+\textcolor{red}{\item \emph{Einbinden von Abbildungen:} Verwenden Sie zum Einbinden von Abbildungen bitte ausschlie\ss{}lich das {\tt *.eps} oder {\tt *.jpg}-Format. Das {\tt *.eps}-Format ist vektoriell aufgebaut und erm\"oglicht damit eine Skalierung der Objekte. Achten Sie bitte darauf, dass die EPS-Dateien keinen Rand haben (korrekte Bounding Box).}
+%
+\item \emph{PSTricks:} Verzichten Sie bitte in Ihrem Beitrag auf das Paket {\em PSTricks}. Sollten Sie es gewohnt sein, normalerweise mit {\em PSTricks} zu arbeiten, erstellen Sie bitte ein seperates \LaTeX -Dokument f\"ur jedes Bild, erstellen darin mit PsTricks nur das Bild, geben es als {\tt *.ps} Datei aus, und erstellen mittles {\em Ghostscript} eine {\tt *.eps}-Datei mit Bounding-Box, welche Sie dann in Ihr Beitragsdokument wie oben beschrieben einbinden k\"onnen.
+%
+\item \emph{Bibliographie:} Erstellen Sie eine \BibTeX -Datei mit Eintr\"agen im \BibTeX -For\-mat. Sie k\"onnen die f\"ur das vorliegende Musterdokument verwendete Datei {\tt 0000.bib} benutzen und anpassen. Bitte benennen Sie Ihre Literaturverweise in der Form BBBB-NN mit der Referenznummer Ihres Beitrags BBBB (das ist die bei der Abstract-Einreichung mitgeteilte Nummer) und der fortlaufenden Literaturverweisnummer NN innerhalb Ihres Beitrags, also z.B.\ 0000-03 f\"ur die 3.\ Literaturreferenz im Beitrag Nr.~0000. Bitte setzen Sie Mehrfachreferenzen im Format {\tt \bs cite\{0000-01,0000-02\}}.
+
+
+ Die kleine Beispielbibliografie des vorliegenden Musterdokuments enth\"alt als Referenzen einen Journalartikel \cite{0000-01}, zwei B\"ucher \cite{0000-02,0000-03}, einen \newline                    BVM-Proceedingsbeitrag \cite{0000-04} und eine Dokumentation \cite{0000-05}. \textcolor{red}{Achten Sie bitte darauf, in Ihrer {\tt *.bib}-Datei die richtige Kategorie f\"ur jede Quelle zu verwenden (@ARTICLE, @BOOK, @MISC) und zumindest alle Pflichtfelder zu f\"ullen.}
+Bitte nehmen Sie nur solche Eintr\"age in die {\tt *.bib}-Datei auf, die Sie auch f\"ur Ihren Beitrag verwenden, {\tt *.bib}-Dateien mit Ihren \glqq Gesammelten Werken\grqq\ erschweren die Bearbeitung und sind Quellen f\"ur vermeidbare Fehler.
+\item \emph{Benennung zus\"atzlicher Dateien}: In analoger Weise benennen Sie bitte alle Bilder mit der zugewiesenen Beitragsnummer.
+\end{itemize}
+
+\subsection{MS-Word-Format}
+%
+Alle MS-Word-Einreichungen werden nach \LaTeX\ konvertiert. Um das zu vereinfachen, beachten Sie bitte die folgenden Hinweise:
+%
+\begin{itemize}
+\item \emph{Systemeinstellungen:} Um sinnvoll mit Druckformaten von MS-Word arbeiten zu k\"onnen, sollten Sie in der Normalansicht mit den Men\"upunkten {\em Extras / Optionen} auf dem Karteiblatt {\em Ansicht} die {\em Breite der Formatvorlagenanzeige} auf 2\ts cm setzen. Am linken Rand erscheinen jetzt die Namen der verwendeten Druckformate. Die Druckformate f\"ur 
+die zu schreibenden Abs\"atze k\"onnen aus dem Listenfeld links in der Werkzeugleiste 
+ausgesucht werden.
+%
+%
+\item \emph{Layoutspielraum:} Lassen Sie bitte am Ende des Dokuments ca.\ $\frac{1}{2}$ Seite, als Spielraum f\"ur das sp\"atere Layouten Ihres Beitrags im Gesamtprojekt frei. Zu lange Betr\"age werden redaktionell bearbeitet, gek\"urzt, oder erst gar nicht in die Proceedings aufgenommen, falls die Zusatzseiten nicht rechtzeitig von den Autoren bezahlt wurden.
+%
+\item \emph{Einbinden von Abbildungen:} Achten Sie beim Einbinden von Abbildungen darauf, dass mindestens jeweils 3\ts mm Abstand zwischen Abbildung, Beschriftung und Text bleibt. Verzichten Sie auf Flie\ss{}text um Abbildung herum. Legen Sie keine MS-Word-Grafik-Overlays auf Bilder, denn diese gehen bei der Konvertierung nach \LaTeX\ verloren. Alle Bilder m\"ussen auch im Quellformat ({\tt z.B.\ *.jpg, *.png oder *.bmp}) verf\"ugbar sein.
+%
+\item \emph{Bezahlung der Konvertierungsgeb\"uhr:} Bitte reichen Sie andere als in \LaTeX\ formatierte Beitr\"age erst dann ein, wenn der Zahlungseingang Ihrer Konvertierungsgeb\"uhr auf dem BVM-Konto bereits erfolgt ist (Abschn.\ \ref{0000-bezahlung}).
+\end{itemize}
+
+\subsection{Referenzdatei}
+%
+Erzeugen Sie in jedem Fall eine gelayoutete Referenzdatei im PDF-Format. Diese dient der \"Uberpr\"ufung, dass Ihr Beitrag fehlerfrei in die Proceedings \"ubernommen werden konnte. Nennen Sie diese in {\tt 0000-ref.pdf} um.
+
+\subsection{Archivdatei mit allen Dateien}
+%
+Bitte erzeugen Sie ein {\em ZIP}-Archiv das alle Dateien enth\"alt, die ben\"otigt werden, um Ihren Beitrag zu \LaTeX-chen. Dies sind:
+%
+\begin{itemize}
+\item {\tt 0000.tex} Ihr Beitrag als \LaTeX-Datei
+\item {\tt 0000-ref.pdf} Ihr Beitrag im Layout
+\item {\tt 0000.bib} Ihre Bibliographieeintr\"age
+\item {\tt 0000-figx.eps} alle Bilder Ihres Beitrages
+\item {\tt bvm2020.cls} unsere \LaTeX-Definitionsdatei
+\end{itemize}
+
+\textcolor{red}{Die BVM-Formatvorgabe {\tt bvm2020.bst} muss nicht eingebunden werden. Die BVM-Formatvorgabe {\tt\bs bvm2020.cls} jedoch muss mit eingebunden werden.}
+
+\subsection{Transfer}
+%
+Die standardisierte Verschlagwortung sowie der Transfer des Archiv-Files sind ab dem 29.11.2019 auf der Seite
+%
+\begin{center}
+{\tt http:/$\!$/bvm.plri.de}
+\end{center}
+%
+
+Zum Einloggen ben\"otigen Sie Ihre Emailadresse und Ihre Beitragsnummer. F\"uhren Sie die Verschlagwortung Ihres Beitrags durch und laden am Ende Ihr {\em ZIP}-Archiv auf den Server.
+\textcolor{red}{Wichtig ist hierbei, dass keine weiteren eigenen Verschlagwortungen (u.a. \textbackslash begin\{keyword\}, \textbackslash index\{keywords\}) innerhalb Ihres Beitrages zulässig sind.}
+Daraufhin werden Ihr {\em ZIP}-Archiv, sowie Ihre {\tt *.tex} Datei automatisch einem Test auf die Einhaltung der Richtlinen unterzogen. Sollten Sie eine Fehlermeldung erhalten, korrigieren Sie bitte den angemerkten Punkt und reichen Ihr {\em ZIP}-Archiv erneut ein. Generell m\"ussen Sie bei einer erneuten Einreichung die Verschlagwortung nicht erneut vornehmen.
+
+
+\subsection{Bezahlung etwaiger Geb\"uhren} \label{0000-bezahlung}
+%
+Extraseiten und Konvertierungen von MS-Word-Ein\-rei\-chun\-gen durch das BVM-Team sind kostenpflichtig und m\"ussen von den Autoren mit jeweils 270,00\ts \euro\ inkl.\ MwSt.\ gesondert bezahlt werden. Die Geb\"uhren verstehen sich dabei additiv.
+Als Autor m\"ussen Sie sicherstellen, dass alle Geb\"uhren rechtzeitig auf dem Konto des BVM Workshops eingegangen sind.
+%
+%
+\begin{SCtable}[5][htb]
+\caption{BVM Geb\"uhrencodes. Studenten d\"urfen nicht \"alter als 25 Jahre sein und m\"ussen einen g\"ultigen Studentenausweis bei der Registrierung vorzeigen. Un\-ter\-st\"utzende Fachgesellschaften sind BVMI, CURAC, DGBMT, GI, GMDS, IEEE und DAGM.}
+\label{0000-tab-code}
+\begin{tabular*}{.58\textwidth}{l@{\extracolsep\fill}lr}\hline
+Typ & Bedeutung & Betrag\\ \hline
+\multicolumn{3}{l}{Anmeldung bis 31.01.2020}\\ \hline
+A & Studenten mit Proceedingsstick &  40\ts \euro\\
+B & Mitglieder Fachgesellschaften  & 180\ts \euro\\
+C & Regul\"are Teilnehmer            & 200\ts \euro\\
+D & Tutorium                       &  60\ts \euro\\ \hline
+\multicolumn{3}{l}{Anmeldung ab 01.02.2020} \\ \hline
+E & Studenten mit Proceedingsstick &  60\ts \euro\\
+F & Mitglieder Fachgesellschaften  & 220\ts \euro\\
+G & Regul\"are Teilnehmer            & 240\ts \euro\\
+H & Tutorium                       &  80\ts \euro\\ \hline
+\multicolumn{3}{l}{Sonstige Geb\"uhren} \\ \hline
+I & Gesellschaftsabend f\"ur Studenten &  15\ts \euro\\ 
+J & Gesellschaftsabend f\"ur Andere  &  30\ts \euro\\ 
+K & Extraseite Proceedings         & 270\ts \euro\\
+L & Konvertierung Word             & 270\ts \euro\\ \hline
+\end{tabular*}
+\end{SCtable}
+
+
+
+\section{Formatvorlagen und Hinweise}
+\label{formatvorlagen}
+%
+Unter der Internetadresse:
+%
+\begin{center}
+{\tt http:/$\!$/www.bvm-workshop.org/}
+\end{center}
+%
+finden Sie unter \glqq Autoren / Proceedings Erstellung\grqq\ alle zur Vorbereitung und Einreichung Ihres Beitrags notwendigen 
+Formatvorlagen und Hinweise. Das Paket enth\"alt folgende Dateien:
+%
+\begin{itemize}
+\item {\tt bvm2020.cls} \LaTeX-Dokumentenklasse mit allen Druckformaten;
+\item {\tt bvm2020.bst} \BibTeX -Definition im Vancouver-Style;
+\item {\tt bvm2020-vancouver.pdf} Definition des Vancouver-Styles \cite{0000-05};
+\item {\tt bvm2020-issn.xls} Excel-Datei mit den MedLine-Abk\"urzungen f\"ur wissenschaftliche Fachzeitschriften;
+\item {\tt bvm2020-issn.txt} entspricht {\tt bvm2020-issn.xls}, jedoch im ASCII-Format;
+\item {\tt 0000.tex} \LaTeX -Datei, mit der dieses Dokument erzeugt wurde; 
+\item {\tt 0000.bib} \BibTeX -Datei mit den Referenzen dieses Dokumentes;
+\item {\tt 0000-figx.eps} Separate EPS-Bilddatein gem\"a\ss{} den Vorgaben.
+\end{itemize}
+
+\subsection{Troubleshooting}
+%
+Sollten Sie irgendwelche Fragen oder Probleme haben, so wenden Sie sich bitte an das BVM-Team in Braunschweig unter der Email {\tt support.bvm@plri.de}. Falls Sie noch nie mit \LaTeX\ gearbeitet haben, stehen wir Ihnen gerne beratend zur Seite, um Ihnen den Einstieg zu erleichtern. Je h\"oher der Anteil der in \LaTeX\ eingereichten Beitr\"age ist, desto einfacher und besser ist das Buchprojekt abzuwickeln.

@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% Horsch 041224
+%
+% - übernommen von Lehmann
+% - angepasst für Proceedings BVM2003, Erlangen, Jan 2003
+%	- Pseudo-Definitionen für tocgenerate (Generierung Inhaltsverz.)
+%   \pagecount (Dez 2004)
+%
+
+\catcode`@=11
+
+\def\makeauthor{\if@filesw \newwrite\@aindexfile
+  \immediate\openout\@aindexfile=\jobname_authors.pix
+  \def\addauthor{\@bsphack\begingroup
+             \def\protect####1{\string####1\space}\@sanitize
+             \@wraindex}\typeout
+  {Writing index file \jobname_authors.pix }\fi}
+
+\def\@wraindex#1{
+   \edef\@tempa{\write\@aindexfile{{#1}{\the\tocpos}}}
+        \expandafter\endgroup\@tempa
+   \if@nobreak \ifvmode\nobreak\fi\fi\@esphack}
+
+\def\addauthor{\@bsphack\begingroup \@sanitize\@addauthor}
+
+\def\makepreindex{\if@filesw \newwrite\@pindexfile
+  \immediate\openout\@pindexfile=\jobname_index.pix
+  \def\addpreindex{\@bsphack\begingroup
+             \def\protect####1{\string####1\space}\@sanitize
+             \@wrpindex}\typeout
+  {Writing index file \jobname_authors.pix }\fi}
+
+\def\@wrpindex#1{
+   \edef\@tempa{\write\@pindexfile{{#1}{\the\tocpos}}}
+        \expandafter\endgroup\@tempa
+   \if@nobreak \ifvmode\nobreak\fi\fi\@esphack}
+
+\def\addpreindex{\@bsphack\begingroup \@sanitize\@addpreindex}
+
+\def\makecategory{\if@filesw \newwrite\@bindexfile
+  \immediate\openout\@bindexfile=\jobname_category.pix
+  \def\addcategory{\@bsphack\begingroup
+             \def\protect####1{\string####1\space}\@sanitize
+             \@wrbindex}\typeout
+  {Writing index file \jobname_category.pix }\fi}
+
+\def\@wrbindex#1{
+   \edef\@tempa{\write\@bindexfile{{#1}{\the\tocpos}}}
+        \expandafter\endgroup\@tempa
+   \if@nobreak \ifvmode\nobreak\fi\fi\@esphack}
+
+\def\addcategory{\@bsphack\begingroup \@sanitize\@addcategory}
+
+\catcode`@=12
+
+
+
+
+% \newcommand{\tocentry}[7]
+\newcommand{\tocentry}[5]
+% #1 = articletype + counter
+% #2 = title
+% #3 = Autoren
+% #4 = Autoren, erster fett
+% #5 = Seitenzahl
+           {
+            %\vspace{3mm}
+            \noindent
+%ho            \begin{minipage}[b]{115.5mm}
+            \begin{minipage}[b]{114.5mm}
+            \raggedright
+            \begin{list}{}{\labelwidth9mm
+                           \leftmargin9mm
+                           \labelsep0mm}
+%ho            \item[#1 \hfill] #3 \newline
+%ho                        {\em #4}\dotfill
+%             \item[#1 \hfill] {\em #2:} #4 #3 \dotfill
+            \item[#1 \hfill] #3: #2 \dotfill  % #1 = Buchstabe und lfd. Nr.; #2 = Autoren; #3 = Autoren ;#4 = Titel
+            \end{list}
+            \end{minipage}
+%ho            \begin{minipage}{5.5mm}
+            \begin{minipage}{6.5mm}
+%             \hfill\raisebox{1.5pt}{\the\tocpos} % Seitennummer
+%             \hfill\raisebox{1.5pt} 
+	      \hfill \raisebox{1.5pt}{#5}
+            \end{minipage}
+%             \addauthor{#5}
+%             \addpreindex{#7}
+%             \addcategory{#6}
+%             \advance \tocpos #2\relax % advance erhöht/vermindert die Variable tocpos; relax macht nichts (no-op) = Abbruch ohne Fehlermeldung
+%             \advance \tocpos \relax % advance erhöht/vermindert die Variable tocpos; relax macht nichts (no-op) = Abbruch ohne Fehlermeldung
+        }
+
+
+\newcommand{\firma}[1]
+           {\begin{minipage}[t]{58mm}
+             #1
+            \end{minipage}}
+
+\newcommand{\siehe}[2]{#2, {\it siehe} #1}
+
+\newcommand{\nachsatz}[2]{#1, #2}
+
+\newcommand{\nachsatzfett}[2]{#1, {\bf #2}}
+
+\newcommand{\fett}[1]{{\bf #1}}
+
+\newcommand{\fettumbruch}[1]{{\bf #1} \newpage}
+
+\newcommand{\umbruch}[1]{#1 \newpage}
+
+\newcommand{\zwischen}[1]
+           {\newpage
+            \rule{0mm}{0mm}
+
+            \vspace{5cm}
+            \begin{center}
+            \baselineskip35pt
+            {\huge \bf #1} 
+            \end{center}}
+
+%	Pseudo-Definition für tocgenerate
+\newcommand{\pagecount}[1]{}
+
+
+\newcommand{\elqq}{``}%
+\newcommand{\erqq}{''}%

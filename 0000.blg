@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 0000.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: bvm2020.bst
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: 0000.bib
+Warning--I didn't find a database entry for "0000-05"
+Warning--I didn't find a database entry for "0000-04"
+Warning--empty author and editor in ronneberger2015unet
+Warning--missing publisher in ronneberger2015unet
+Warning--empty author and editor in long2015fully
+Warning--missing publisher in long2015fully
+Warning--empty author and editor in badrinarayanan2016segnet
+Warning--missing publisher in badrinarayanan2016segnet
+Warning--empty pages in Baheti_2020_CVPR_Workshops
+You've used 8 entries,
+            3143 wiz_defined-function locations,
+            686 strings with 5882 characters,
+and the built_in function-call counts, 10231 in all, are:
+= -- 1031
+> -- 100
+< -- 0
++ -- 50
+- -- 25
+* -- 920
+:= -- 1232
+add.period$ -- 21
+call.type$ -- 8
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 537
+empty$ -- 1100
+format.name$ -- 32
+if$ -- 2304
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 68
+newline$ -- 38
+num.names$ -- 8
+pop$ -- 155
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 144
+stack$ -- 0
+substring$ -- 2134
+swap$ -- 150
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 55
+width$ -- 9
+write$ -- 77
+(There were 9 warnings)

@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+
+\bibitem{ronneberger2015unet}
+Ronneberger O, Fischer P, Brox T. U-Net: Convolutional Networks for Biomedical
+  Image Segmentation; 2015.
+
+\bibitem{HAVAEI201718}
+Havaei M, Davy A, Warde-Farley D, et~al.
+\newblock Brain tumor segmentation with Deep Neural Networks.
+\newblock Medical Image Analysis. 2017;35:18--31.
+\newblock Available from:
+  \url{https://www.sciencedirect.com/science/article/pii/S1361841516300330}.
+
+\bibitem{long2015fully}
+Long J, Shelhamer E, Darrell T. Fully Convolutional Networks for Semantic
+  Segmentation; 2015.
+
+\bibitem{badrinarayanan2016segnet}
+Badrinarayanan V, Kendall A, Cipolla R. SegNet: A Deep Convolutional
+  Encoder-Decoder Architecture for Image Segmentation; 2016.
+
+\bibitem{Baheti_2020_CVPR_Workshops}
+Baheti B, Innani S, Gajre S, et~al.
+\newblock Eff-UNet: A Novel Architecture for Semantic Segmentation in
+  Unstructured Environment.
+\newblock In: Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition (CVPR) Workshops; 2020. .
+
+\bibitem{0000-01}
+Ruttimann UE, Groenhuis RAJ, Webber RL.
+\newblock Restoration of digital multiplane.
+\newblock IEEE Trans Med Imaging. 1984;3(3):141--8.
+
+\bibitem{0000-02}
+Lehmann T, Oberschelp W, Pelikan E, et~al.
+\newblock Bildverarbeitung f\"ur die Medizin.
+\newblock Berlin: Springer; 1997.
+
+\bibitem{0000-03}
+Handels H.
+\newblock Medizinische Bildverarbeitung.
+\newblock Stuttgart: Teubner; 2000.
+
+\end{thebibliography}
